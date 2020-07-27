@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/GregoryPetrovLn.github.io/react-deploy/static/css/main.81bdc375.chunk.css",
+    "main.js": "/GregoryPetrovLn.github.io/react-deploy/static/js/main.f9975655.chunk.js",
+    "main.js.map": "/GregoryPetrovLn.github.io/react-deploy/static/js/main.f9975655.chunk.js.map",
+    "runtime-main.js": "/GregoryPetrovLn.github.io/react-deploy/static/js/runtime-main.63670176.js",
+    "runtime-main.js.map": "/GregoryPetrovLn.github.io/react-deploy/static/js/runtime-main.63670176.js.map",
+    "static/css/2.09d1976d.chunk.css": "/GregoryPetrovLn.github.io/react-deploy/static/css/2.09d1976d.chunk.css",
+    "static/js/2.7f709945.chunk.js": "/GregoryPetrovLn.github.io/react-deploy/static/js/2.7f709945.chunk.js",
+    "static/js/2.7f709945.chunk.js.map": "/GregoryPetrovLn.github.io/react-deploy/static/js/2.7f709945.chunk.js.map",
+    "index.html": "/GregoryPetrovLn.github.io/react-deploy/index.html",
+    "precache-manifest.d6377a4f1fa684701c2d4b7583d65945.js": "/GregoryPetrovLn.github.io/react-deploy/precache-manifest.d6377a4f1fa684701c2d4b7583d65945.js",
+    "service-worker.js": "/GregoryPetrovLn.github.io/react-deploy/service-worker.js",
+    "static/css/2.09d1976d.chunk.css.map": "/GregoryPetrovLn.github.io/react-deploy/static/css/2.09d1976d.chunk.css.map",
+    "static/css/main.81bdc375.chunk.css.map": "/GregoryPetrovLn.github.io/react-deploy/static/css/main.81bdc375.chunk.css.map",
+    "static/js/2.7f709945.chunk.js.LICENSE.txt": "/GregoryPetrovLn.github.io/react-deploy/static/js/2.7f709945.chunk.js.LICENSE.txt",
+    "static/media/github.png": "/GregoryPetrovLn.github.io/react-deploy/static/media/github.8e54db8e.png",
+    "static/media/gmail.png": "/GregoryPetrovLn.github.io/react-deploy/static/media/gmail.ed0936ab.png",
+    "static/media/linkedIn.png": "/GregoryPetrovLn.github.io/react-deploy/static/media/linkedIn.108fdc45.png",
+    "static/media/skype.png": "/GregoryPetrovLn.github.io/react-deploy/static/media/skype.70431f81.png",
+    "static/media/stackOverflow.png": "/GregoryPetrovLn.github.io/react-deploy/static/media/stackOverflow.1dbf48e5.png",
+    "static/media/telegram.png": "/GregoryPetrovLn.github.io/react-deploy/static/media/telegram.9d67bea0.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.63670176.js",
+    "static/css/2.09d1976d.chunk.css",
+    "static/js/2.7f709945.chunk.js",
+    "static/css/main.81bdc375.chunk.css",
+    "static/js/main.f9975655.chunk.js"
+  ]
+}
