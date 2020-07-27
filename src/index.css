@@ -1,0 +1,27 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+.main{
+    height: 100vh;
+    background-image: linear-gradient(to bottom left,#606060, #202020 );
+    box-sizing: border-box;
+    /*margin-right: 15px;*/
+    padding: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row{
+    padding-left: 15px;
+}
+
+img:hover{
+    transform: scale(1.15, 1.15);
+}
+
+img{
+    height: 100%;
+}
