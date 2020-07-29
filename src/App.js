@@ -4,12 +4,12 @@ import {
     CouchSerfing,
     FaceBook,
     GitHub,
-    Gmail,
+    Gmail, GmailLink,
     Instagram,
-    LinkedIn,
-    Skype,
+    LinkedIn, Main,
+    Skype, SkypeLink,
     Stack,
-    Telegram,
+    Telegram, TelegramLink, TelephoneLink,
     Website
 } from "./util";
 
@@ -19,14 +19,13 @@ import {
     GitHubLink,
     InstagramLink,
     LinkedInLink,
-    SkypeLink,
     StackLink,
-    TelegramLink,
     WebsiteLink
 } from './util'
 
 
 class App extends Component {
+
     goToPage = (page) => {
         switch (page) {
             case 'website':
@@ -59,23 +58,24 @@ class App extends Component {
                 break;
 
             case 'contact':
-
+                window.open(TelephoneLink)
                 break;
 
             case 'skype':
+                window.open(SkypeLink);
                 break;
 
-            case 'gmail':
+            case 'mail':
+                window.open(GmailLink);
                 break;
 
             case 'telegram':
-
+                window.open(TelegramLink);
                 break;
 
 
             default:
                 console.log('def');
-                break;
         }
     };
 
@@ -84,44 +84,61 @@ class App extends Component {
 
         return (
             <div className={'container-fluid main h-100'}>
-
-                <div className="container">
-                    <p className={'text-center pt-1'}>
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit.
-                        Accusamus ad alias aut beatae corporis
-                        dolores eum fuga fugiat impedit
-                        inventore iure magni nam quidem,
-                        quod reprehenderit sunt tenetur voluptatem
-                        voluptates?</p>
+                <div className="container-fluid row">
+                    <img src={Main} alt={'#'} className={'col-8 d-lg-none offset-2 mainImage' }/>
+                    <h3 className={'pt-2 d-lg-none'}>Hey there!</h3>
+                    <p className={'pt-1 text-justify col-lg-6 d-lg-none'}>
+                        Here you can find my social networks, personal website, and some contacts for communication.
+                        Fell free to text me...</p>
                 </div>
 
 
-                <div className="container row pt-2 pt-lg-5">
-                    <img src={Website} onClick={() => this.goToPage('website')} alt={'#'} className={'col-4 col-lg-2 offset-lg-2'}/>
-                    <img src={GitHub} onClick={() => this.goToPage('github')} alt={'#'} className={'col-4 col-lg-2 offset-lg-2'}/>
-                    <img src={Telegram} onClick={() => this.goToPage('telegram')} alt={'#'} className={'col-4 text-right col-lg-2 offset-lg-2'}/>
-                </div>
 
-                <div className="container row mt-5">
-                    <img src={FaceBook} onClick={() => this.goToPage('facebook')} alt={'#'} className={'col-4 col-lg-2 offset-lg-2'}/>
-                    <img src={Instagram} onClick={() => this.goToPage('instagram')} alt={'#'} className={'col-4 col-lg-2 offset-lg-2'}/>
-                    <img src={LinkedIn} onClick={() => this.goToPage('linkedIn')} alt={'#'} className={'col-4 col-lg-2 offset-lg-2'}/>
-                </div>
-
-                <div className="container row mt-5">
-                    <img src={CouchSerfing} onClick={() => this.goToPage('couchSerfing')} alt={'#'}
+             <div className="container row pt-2 pt-lg-5">
+                    <img src={Contact} alt={'#'} onClick={() => this.goToPage('contact')}
                          className={'col-4 col-lg-2 offset-lg-2'}/>
-                    <img src={Contact} alt={'#'} onClick={() => this.goToPage('contact')} className={'col-4 col-lg-2 offset-lg-2'}/>
-                    <img src={Skype} alt={'#'} onClick={() => this.goToPage('skype')} className={'col-4 col-lg-2 offset-lg-2'}/>
+                     <img src={Website} onClick={() => this.goToPage('website')} alt={'#'}
+                         className={'col-4 col-lg-2 offset-lg-2'}/>
+                   <img src={Gmail} onClick={() => this.goToPage('mail')} alt={'#'}
+                         className={'col-4 right col-lg-2 offset-lg-2'}/>
+                </div>
+
+
+                   <div className="container row mt-5">
+                   <img src={LinkedIn} onClick={() => this.goToPage('linkedIn')} alt={'#'}
+                         className={'col-4 col-lg-2 offset-lg-2'}/>
+
+                    <img src={Instagram} onClick={() => this.goToPage('instagram')} alt={'#'}
+                         className={'col-4 col-lg-2 offset-lg-2'}/>
+
+                          <img src={FaceBook} onClick={() => this.goToPage('facebook')} alt={'#'}
+                         className={'col-4 col-lg-2 offset-lg-2'}/>
 
                 </div>
 
-                <div className="container row mt-5 pb-5 ">
-                    <img src={Stack} onClick={() => this.goToPage('stack')} alt={'#'} className={'col-4 col-lg-2 offset-lg-2'}/>
-                    <div className="offset-4  offset-lg-4"></div>
-                    <img src={Gmail} onClick={() => this.goToPage('gmail')} alt={'#'} className={'col-4 right col-lg-2 offset-lg-2'}/>
+
+                     <div className="container row mt-5">
+                    <img src={Skype} alt={'#'} onClick={() => this.goToPage('skype')}
+                         className={'col-4 col-lg-2 offset-lg-2'}/>
+                         <img src={CouchSerfing} onClick={() => this.goToPage('couchSerfing')} alt={'#'}
+                              className={'col-4 col-lg-2 offset-lg-2'}/>
+                   <img src={Telegram} onClick={() => this.goToPage('telegram')} alt={'#'}
+                         className={'col-4 text-right col-lg-2 offset-lg-2'}/>
+
                 </div>
+
+
+                  <div className="container row mt-5 pb-5 ">
+                    <img src={GitHub} onClick={() => this.goToPage('github')} alt={'#'}
+                         className={'col-4 col-lg-2 offset-lg-2'}/>
+                    <div className="offset-4  offset-lg-4"/>
+                     <img src={Stack} onClick={() => this.goToPage('stack')} alt={'#'}
+                         className={'col-4 col-lg-2 offset-lg-2'}/>
+                </div>
+
+
+
+
             </div>
         );
     }
