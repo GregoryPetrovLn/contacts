@@ -1,5 +1,5 @@
 {
-  "homepage": "https://GregoryPetrovLn.github.io/buisinessCard",
+  "homepage": "https://GregoryPetrovLn.github.io/businessCard",
   "name": "template",
   "version": "0.1.0",
   "private": true,
@@ -47,9 +47,9 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GregoryPetrovLn/visitCard.git"
+    "url": "git+https://github.com/GregoryPetrovLn/businessCard.git"
   },
   "bugs": {
-    "url": "https://github.com/GregoryPetrovLn/visitCard/issues"
+    "url": "https://github.com/GregoryPetrovLn/businessCard/issues"
   }
 }
